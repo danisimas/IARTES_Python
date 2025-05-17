@@ -36,8 +36,7 @@ def analisar_texto(texto):
     print("Número de caracteres (com espaços):",len(texto))
     print(numeroFrequencia)
     print(texto_misto)
-   
-    
+    print("Texto Capitalizado",texto.upper())
 
 
 def main():
