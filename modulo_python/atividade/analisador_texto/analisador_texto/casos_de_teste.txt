@@ -1,0 +1,34 @@
+Casos de Teste
+==============
+
+1. Texto curto sem números:
+----------------------------
+Entrada:
+"Olá mundo"
+
+Saída esperada:
+- Texto muito curto
+- Texto em maiúsculas: OLÁ MUNDO
+- Número de palavras: 2
+- Número de caracteres (com espaços): 9
+- Frequência de vogais: a=0, e=0, i=0, o=2, u=1
+
+2. Texto com números:
+----------------------
+Entrada:
+"A temperatura hoje é 30 graus"
+
+Saída esperada:
+- Texto contém dados mistos
+- Número de palavras: 6
+- Palavra mais longa: "temperatura"
+
+3. Texto completo:
+-------------------
+Entrada:
+"Python é uma linguagem poderosa e divertida"
+
+Saída esperada:
+- Número de palavras: 7
+- Texto em minúsculas: python é uma linguagem poderosa e divertida
+- Três palavras mais longas: poderosa, linguagem, divertida
