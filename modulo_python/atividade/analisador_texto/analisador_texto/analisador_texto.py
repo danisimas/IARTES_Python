@@ -1,5 +1,5 @@
 # analisador_texto.py
-# Autor: [SEU NOME AQUI]
+# Autor: Daniele Simas Guimarães
 
 def analisar_texto(texto):
     # TODO: implementar análise de texto
