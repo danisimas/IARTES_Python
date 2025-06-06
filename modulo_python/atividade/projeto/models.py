@@ -2,6 +2,11 @@
 estoque = []
 proximo_id = 1
 
+def reset_estoque():
+    global estoque, proximo_id
+    estoque = []
+    proximo_id = 1
+
 def criar_produto(dados):
     global proximo_id
     if dados["quantidade_inicial"] < 0 or dados["preco_unitario"] <= 0:
