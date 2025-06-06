@@ -3,11 +3,11 @@
 
 class Veiculo:
     def __init__(self, marca, modelo, ano):
-        self._marca = marca            # atributo protegido
-        self._modelo = modelo          # atributo protegido
-        self._ano = ano                # atributo protegido
-        self.__ligado = False          # atributo privado
-        self.__velocidade = 0          # atributo privado
+        self._marca = marca
+        self._modelo = modelo
+        self._ano = ano
+        self.__ligado = False
+        self.__velocidade = 0
 
     def ligar(self):
         if not self.__ligado:
@@ -41,7 +41,6 @@ class Veiculo:
         return f"{self._marca} {self._modelo}, {self._ano}"
 
 
-# Subclasse: Carro
 class Carro(Veiculo):
     def __init__(self, marca, modelo, ano, portas, combustivel):
         super().__init__(marca, modelo, ano)
@@ -69,7 +68,6 @@ class Carro(Veiculo):
         return "Bibi!"
 
 
-# Função para criar carros via input
 def criar_carros():
     carros = []
 
@@ -88,7 +86,6 @@ def criar_carros():
     return carros
 
 
-# Demonstração dos conceitos com entrada do usuário
 def demonstrar_veiculos():
     carros = criar_carros()
 
@@ -103,6 +100,5 @@ def demonstrar_veiculos():
         print(c.desligar())
         print("-" * 40)
 
-
-# Executar demonstração
-demonstrar_veiculos()
+if __name__ == "__main__":
+    demonstrar_veiculos()
